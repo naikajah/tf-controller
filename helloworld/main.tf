@@ -8,6 +8,11 @@ variable "subject" {
   description = "subject to hello"
 }
 
-output "instance_ips" {
-  value = "Hello, ${var.subject}"
+variable "prefix" {
+  type    = string
+  default = "Hello"
+}
+
+output "greet" {
+  value = "${var.prefix}}, ${var.subject}"
 }
