@@ -16,3 +16,7 @@ variable "prefix" {
 output "greet" {
   value = "${var.prefix}}, ${var.subject}"
 }
+
+output "greet2" {
+  value = "welcome! to terraform controller"
+}
